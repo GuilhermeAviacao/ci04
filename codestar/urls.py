@@ -19,6 +19,7 @@ from django.urls import path, include
 #from blog import views as blog_views
 
 urlpatterns = [
+    path("about/", include("about.urls"), name="about-urls"),
     path('admin/', admin.site.urls),
     #path('blog/', blog_views.my_blog, name="blog"), # the app urls are loaded as the main urls
     path('summernote/', include('django_summernote.urls')),
